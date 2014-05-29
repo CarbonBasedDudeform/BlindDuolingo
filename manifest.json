@@ -1,0 +1,15 @@
+{
+  "name": "Blind Duolingo",
+  "description": "Turns the text of your target language invisible on Duolingo so that you are forced to listen to the language.",
+  "version": "2.0",
+  "permissions": [
+    "http://*.duolingo.com/", "https://*.duolingo.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.duolingo.com/*"],
+      "js": ["background.js"]
+    }],
+
+  "manifest_version": 2
+}
