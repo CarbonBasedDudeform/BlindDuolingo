@@ -18,4 +18,11 @@ document.addEventListener("DOMNodeInserted", function (ev) {
   } catch (e) {
   	//same as above
   }
+
+	try {
+  	var bdis = document.getElementsByTagName("bdi");
+		bdis[0].style.color = "#FFFFFF";
+  } catch (e) {
+  	//same as above
+  }
 }, false);
